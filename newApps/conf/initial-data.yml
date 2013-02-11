@@ -7,20 +7,27 @@ users:
         userId:     guest
         name:       出茂　太郎
         password:   guest
+        chargeFix:  10000
+        chargeTmp:  10000
 
     - !!models.User
-        userId:      maxime@sample.com
+        userId:     maxime@sample.com
         name:       Maxime Dantec
         password:   secret
+        chargeFix:  10000
+        chargeTmp:  10000
 
     - !!models.User
-        userId:      sadek@sample.com
+        userId:     sadek@sample.com
         name:       Sadek Drobi
         password:   secret
+        chargeFix:  10000
+        chargeTmp:  10000
 
     - !!models.User
-        userId:      erwan@sample.com
+        userId:     erwan@sample.com
         name:       Erwan Loisant
         password:   secret
+        chargeFix:  10000
+        chargeTmp:  10000
 
-# orders
