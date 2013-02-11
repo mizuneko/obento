@@ -1,0 +1,26 @@
+
+# Users
+
+users:
+
+    - !!models.User
+        userId:     guest
+        name:       出茂　太郎
+        password:   guest
+
+    - !!models.User
+        userId:      maxime@sample.com
+        name:       Maxime Dantec
+        password:   secret
+
+    - !!models.User
+        userId:      sadek@sample.com
+        name:       Sadek Drobi
+        password:   secret
+
+    - !!models.User
+        userId:      erwan@sample.com
+        name:       Erwan Loisant
+        password:   secret
+
+# orders

@@ -1,0 +1,36 @@
+@(user: User)(body: Html)
+
+<html>
+    <head>
+        <title>OBENTO SYSTEM</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-1.7.1.js")"></script>
+        <script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-play-1.7.1.js")"></script>
+        <script type="text/javascript" src="@routes.Assets.at("javascripts/underscore-min.js")"></script>
+        <script type="text/javascript" src="@routes.Assets.at("javascripts/backbone-min.js")"></script>
+        <script type="text/javascript" src="@routes.Assets.at("javascripts/main.js")"></script>
+        <script type="text/javascript" src="@routes.Application.javascriptRoutes"></script>
+    </head>
+    <body>
+        <header>
+            <a href="" id="logo"><span>OBENTO</span> SYSTEM</a>
+            <dl id="user">
+                <dt>@user.name <span>(@user.userId)</span></dt>
+                <dd>
+                    <a href="@routes.Application.logout()">ログアウト</a>
+                </dd>
+            </dl>
+        </header>
+        <nav>
+            <h4 class="calendar"><a href="#/">カレンダー</a></h4>
+            <ul>
+            	<li>あ</li>
+            	<li>い</li>
+            </ul>
+        </nav>
+        <section id="main">
+            @body
+        </section>
+    </body>
+</html>
