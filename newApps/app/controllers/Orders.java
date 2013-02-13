@@ -15,11 +15,11 @@ public class Orders extends Controller {
 
 	public static Result index() {
 		return ok(
-			ocalendar.render(User.find.byId(request().username()))
-			/*calendar.render(
+			/*ocalendar.render(User.find.byId(request().username()))*/
+			ocalendar.render(
 				Order.findInvolving(request().username()),
 				User.find.byId(request().username())
-			)*/
+			)
 		);
 	}
 }
