@@ -1,10 +1,11 @@
-@(user: User)
+@(orders: List[Order], user: User)
 
-@main(user){
+@main(orders, user){
 	<header>
         <hgroup>
-            <h1>注文票</h1>
-            <h2>どーする？</h2>
+        <a href="">< 前の月</a>
+        <h1>2013年 2月</h1>
+        <a href="">次の月 ></a>
         </hgroup>
     </header>
 
@@ -13,10 +14,22 @@
             <header>
                 <span class="loader">Loading</span>
             </header>
-            <ul class="list">
-                <li>ああああ</li>
-                <li>いいいい</li>
-            </ul>
+        	<table class="display" background="white" border="1px">
+        		<thead>
+        			<tr>
+        				<th width="100px">日付</th>
+        				<th width="200px">店名</th>
+        				<th width="200px">お弁当</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td></td>
+        				<td></td>
+        				<td></td>
+        			</tr>
+        		</tbody>
+        	</table>
         </div>
     </article>
 }
